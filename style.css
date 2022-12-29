@@ -1,0 +1,144 @@
+/* CSS Setup */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+* {
+    margin: 0;
+}
+  
+html, body {
+    height: 100%;
+}
+  
+body {
+    transition: none !important;
+    -webkit-font-smoothing: antialiased;
+}
+  
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  
+input, button, textarea, select {
+    font: inherit;
+}
+  
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* Project CSS */
+
+html {
+    font-size: 1.125rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 14px;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-banner {
+    background-image: url('images/bg-pattern-card.svg');
+    background-size: cover;
+    border-radius: 14px 14px 0px 0px;
+    height: 9rem;
+    width: 100%;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 6rem;
+}
+
+.profile-picture img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile-stats {
+    width: 100%;
+    border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.profile-info p.strong {
+    font-size: 1.2rem;
+    color: hsl(229, 23%, 23%);
+    margin-top: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.profile-info p.strong span {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.profile-info p.weak {
+    font-size: 0.9rem;
+    color: hsl(227, 10%, 46%);
+    margin-bottom: 1.6rem;
+}
+
+.profile-stats {
+    padding: 1.4rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile-stats div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.profile-stats p.strong {
+    color: hsl(229, 23%, 23%);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.profile-stats h2 {
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: hsl(227, 10%, 46%);
+}
+
+footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+footer a {
+    color: hsl(229, 23%, 23%);
+    text-decoration: none;
+}
